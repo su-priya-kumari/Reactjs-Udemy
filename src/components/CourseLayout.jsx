@@ -1,15 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Course from './Course';
-
+const rowData=[
+    {
+    'title':'php',
+    'desc':'testing'
+},
+    {
+    'title':'java',
+    'desc':'testing'
+},
+    {
+    'title':'React',
+    'desc':'testing'
+},
+    {
+    'title':'Python',
+    'desc':'testing'
+},
+    {
+    'title':'php',
+    'desc':'testing'
+},
+]
 const CourseLayout = (props) => {
+    const[data,setData] = useState();
     return(
         <React.Fragment>
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-3"><Course title="Php" desc="testing"/></div>
-                    <div className="col-lg-3"><Course title="React" desc="testing"/></div>
-                    <div className="col-lg-3"><Course title="Java" desc="testing"/></div>
-                    <div className="col-lg-3"><Course title="Python" desc="testing"/></div>
+                    {
+                        rowData.map((value,index) => {
+                            return <div className="col-lg-3"><Course title={value.title} desc={value.desc}></Course></div>
+                        })
+                    }
                 </div>
             </div>
         </React.Fragment>

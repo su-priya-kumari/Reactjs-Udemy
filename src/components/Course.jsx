@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const Course = (props) => {
     return(
@@ -8,6 +9,9 @@ const Course = (props) => {
                 <div className="card-body">
                     <h2>{props.title}</h2>
                     <p className="lead">{props.desc}</p>
+                </div>
+                <div className="card-footer">
+                    <Link to="/course" className="btn btn-success">Read More</Link>
                 </div>
             </div>
         </React.Fragment>
