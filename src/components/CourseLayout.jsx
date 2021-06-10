@@ -1,35 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Course from './Course';
-const rowData=[
-    {
-    'title':'php',
-    'desc':'testing'
-},
-    {
-    'title':'java',
-    'desc':'testing'
-},
-    {
-    'title':'React',
-    'desc':'testing'
-},
-    {
-    'title':'Python',
-    'desc':'testing'
-},
-    {
-    'title':'php',
-    'desc':'testing'
-},
-]
+
 const CourseLayout = (props) => {
-    const[data,setData] = useState();
+    const[data,setData] = useState([]);
+    useEffect(() => {
+        fetch("http://127.0.0.1:8000/api/course/")
+        .then(response => response.json())
+        .then(data => setData(data))
+    });
     return(
         <React.Fragment>
-            <div className="container">
+            <div className="container mt-5">
                 <div className="row">
                     {
-                        rowData.map((value,index) => {
+                        props.data.map((value,index) => {
                             return <div className="col-lg-3"><Course title={value.title} desc={value.desc}></Course></div>
                         })
                     }

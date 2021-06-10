@@ -4,7 +4,7 @@ const HomePage = () => {
     return (
         <div className="navbar navbar-expand-lg bg-light navbar-light">
             <div className="container">
-                <a href="" className="navbar-brand">CWS</a>
+                <a href="#data" className="navbar-brand">CWS</a>
                 <ul className="navbar-nav ms-auto">
                     <li className="nav-item">
                         <Link to="/" className="nav-link">Home</Link>

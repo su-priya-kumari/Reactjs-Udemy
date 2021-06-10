@@ -8,18 +8,18 @@ const VideoStreamView = () => {
                     <div className="row">
                         <div className="col-lg-2">
                             <div className="list-group">
-                                <a href="" className="list-group-item list-group-item-action">Module 1</a>
-                                <a href="" className="list-group-item list-group-item-action">Module 2</a>
-                                <a href="" className="list-group-item list-group-item-action">Module 3</a>
-                                <a href="" className="list-group-item list-group-item-action">Module 4</a>
-                                <a href="" className="list-group-item list-group-item-action">Module 5</a>
-                                <a href="" className="list-group-item list-group-item-action">Module 6</a>
-                                <a href="" className="list-group-item list-group-item-action">Module 7</a>
-                                <a href="" className="list-group-item list-group-item-action">Module 8</a>
-                                <a href="" className="list-group-item list-group-item-action">Module 9</a>
-                                <a href="" className="list-group-item list-group-item-action">Module 10</a>
-                                <a href="" className="list-group-item list-group-item-action">Module 11</a>
-                                <a href="" className="list-group-item list-group-item-action">Module 12</a>
+                                <a href="#demo" className="list-group-item list-group-item-action">Module 1</a>
+                                <a href="#demo" className="list-group-item list-group-item-action">Module 2</a>
+                                <a href="#demo" className="list-group-item list-group-item-action">Module 3</a>
+                                <a href="#demo" className="list-group-item list-group-item-action">Module 4</a>
+                                <a href="#demo" className="list-group-item list-group-item-action">Module 5</a>
+                                <a href="#demo" className="list-group-item list-group-item-action">Module 6</a>
+                                <a href="#demo" className="list-group-item list-group-item-action">Module 7</a>
+                                <a href="#demo" className="list-group-item list-group-item-action">Module 8</a>
+                                <a href="#demo" className="list-group-item list-group-item-action">Module 9</a>
+                                <a href="#demo" className="list-group-item list-group-item-action">Module 10</a>
+                                <a href="#demo" className="list-group-item list-group-item-action">Module 11</a>
+                                <a href="#demo" className="list-group-item list-group-item-action">Module 12</a>
                             </div>
                         </div>
                         <div className="col-lg-10">
