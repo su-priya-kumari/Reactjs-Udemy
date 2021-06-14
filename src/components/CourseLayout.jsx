@@ -14,7 +14,7 @@ const CourseLayout = (props) => {
                 <div className="row">
                     {
                         props.data.map((value,index) => {
-                            return <div className="col-lg-3"><Course title={value.title} desc={value.desc}></Course></div>
+                            return <div className="col-lg-3"><Course id={value.id} title={value.title} desc={value.desc}></Course></div>
                         })
                     }
                 </div>

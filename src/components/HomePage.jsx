@@ -15,6 +15,9 @@ const HomePage = () => {
                     <li className="nav-item">
                         <Link to="/register" className="nav-link">Register</Link>
                     </li>
+                    <li className="nav-item">
+                        <Link to="/course/add" className="nav-link">Add Course</Link>
+                    </li>
                 </ul>
             </div>
         </div>

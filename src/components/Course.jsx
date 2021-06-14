@@ -11,7 +11,7 @@ const Course = (props) => {
                     <p className="lead">{props.desc}</p>
                 </div>
                 <div className="card-footer">
-                    <Link to="/course" className="btn btn-success">Read More</Link>
+                    <Link to={`/course/${props.id}`} className="btn btn-success">Read More</Link>
                 </div>
             </div>
         </React.Fragment>
