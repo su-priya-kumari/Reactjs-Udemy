@@ -10,7 +10,7 @@ const CourseView = () => {
         .then(data => setCourseData(data))
       },)
     return(
-        <div className="container">
+        <div className="container mt-3">
             <div className="row">
                 <div className="col-lg-9">
                     <p className="lead">{courseData.description}</p>
